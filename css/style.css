@@ -11,18 +11,24 @@
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
-@media (min-width: 1024px) {
  
 
 .fa-solid {
     color: var(--main-color);
 }
-.headerright a{
-    padding-top: 28px;
+.headerright  ul li a{
+    /* padding-top: 28px; */
     margin-right: 40px;
+    list-style-type: none;
+}
+.menu li {
+    display: inline-block; 
+
 }
 
+
 body {
+    min-width: 1440px;
     display: flex;
     justify-content: center;
 }
@@ -49,7 +55,8 @@ body {
     padding: 0px 50px 0px 50px;
     gap: 68px;
 }
-.headerright a:hover {
+.headerright ul li a:hover {
+    padding-top: 28px;
     color: #0065FC;
     cursor: pointer;
     border-top: 3px solid #0065FC;
@@ -67,6 +74,7 @@ body {
     padding: 4px, 19px, 4px, 19px;
     border-radius: 25px;
     gap:10px;
+    cursor: pointer;
 }
 .catfiltres:hover{
  background-color:   #DEEBFF;
@@ -151,7 +159,7 @@ line-height: 19px;
 .activities{
     padding-bottom: 80px;
 }
-.divforactivities p{
+.divforactivities h3 {
 font-family: Raleway;
 font-size: 16px;
 font-weight: 700;
@@ -163,8 +171,8 @@ padding: 20px;
 .divforactivities img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-height: 380px;
-width: 298px;
+    height: 380px;
+    width: 298px;
 }
 .hebergementdivglobar > * {
     flex-grow: 1;
@@ -181,8 +189,7 @@ width: 298px;
 }
 .card-content-hebergement{
 display: flex;
-    min-height: 33%;
-    /* max-height: 20px; */
+min-height: 33%;
 flex-direction: row;
 border-radius: 20px;
 display: flex;
@@ -195,8 +202,6 @@ margin-top: 10px;
 }
 
  .card-content-hebergement {
-    /* width: 130px; */
-    /* gap: 12px; */
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -241,7 +246,7 @@ button:hover {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    /* padding: 0 50px; */
+    padding: 0 50px;
     box-sizing: border-box;
 }
 
@@ -368,7 +373,7 @@ a {
     margin-bottom: 5px;
 }
 
-}
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
